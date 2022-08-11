@@ -13,7 +13,7 @@ aws cloudformation create-stack \
   --stack-name an-example-service \
   --template-body file://service.yaml \
   --parameters \
-      ParameterKey=NetworkStackName,ParameterValue=a-basic-network \
+      ParameterKey=NetworkStackName,ParameterValue=an-example-network \
       ParameterKey=ServiceName,ParameterValue=aws-warm-v1 \
       ParameterKey=ImageUrl,ParameterValue=docker.io/library/aws-warm:latest \
       ParameterKey=ContainerPort,ParameterValue=9090
